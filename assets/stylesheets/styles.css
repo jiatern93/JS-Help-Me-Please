@@ -1,0 +1,77 @@
+/* selects all elements in CSS and applies properties*/
+*{
+	border-radius: 0px !important;
+}
+
+html,
+body{
+	padding: 0px !important;
+	margin: 0px !important;
+	height: 100%;
+	font-family: 'open sans', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-size: 13px;
+	text-align: center;
+	font-family: 'open sans', sans-serif;
+}
+
+/*top padding for sections so that scrollspy is placed nicely*/
+#section1,
+#section2,
+#section3{
+	padding-top: 50px;
+}
+
+#topIntro{
+	height: 100vh;
+	display: table;
+	width: 100%;
+	/*line-height: 200vh;*/
+}
+
+#topIntro h1{
+	font-size: 60px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#section1 p{
+	margin: 100px;
+}
+
+.projectImg{
+	margin: 0px auto;
+	max-height: 300px;
+}
+
+@media (max-width: 767px){
+	.projectImg{
+		max-width: 300px;
+	}
+
+	.your-class #placeWorked,
+	.your-class #thingsILove,
+	.your-class #stuffICareAbout{
+		min-height: 1000px;
+		background-color: inherit;
+	}
+}
+
+@media (max-width: 424px){
+	.col-xxs-12{
+		width: 80%;
+		margin-left:10%;
+	}
+}
+
+section h2{
+	font-size: 30px;
+}
